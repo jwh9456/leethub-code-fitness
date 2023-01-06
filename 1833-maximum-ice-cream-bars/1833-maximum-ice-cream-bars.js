@@ -4,9 +4,9 @@
  * @return {number}
  */
 var maxIceCream = function(costs, coins) {
-    let price = 0, count=0;
+    let count=0;
     costs = costs.sort((a,b)=>(a-b));
-    while(price <= coins && costs.length){
+    while(costs.length){
         let coin = costs.shift();
         if(coin <= coins){
             count++;
