@@ -3,8 +3,7 @@
  * @return {number}
  */
 function numIslands (grid){
-	let count = 0;  //the counted islands
-	//Go though each cell of the 2d array/grid 
+	let count = 0;
 	for(let row = 0; row < grid.length; row++){
 	    for(let col = 0; col < grid[row].length; col++){
 	        if(grid[row][col] == '1'){
